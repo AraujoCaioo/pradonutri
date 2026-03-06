@@ -510,15 +510,9 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            body: {
-              data: {
-                fields: [
-                  { key: 'nome', label: 'Nome Completo', value: nome },
-                  { key: 'whatsapp', label: 'Numero de WhatsApp', value: whatsapp },
-                  { key: 'cidade', label: 'Cidade', value: cidade }
-                ]
-              }
-            }
+            nome: nome,
+            whatsapp: whatsapp,
+            cidade: cidade
           })
         });
       } catch(e) {}
